@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="My Notes" />
+        <item
+            android:id="@+id/nav_todo"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="To-do List" />
+        <item
+            android:id="@+id/nav_reminders"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="My Reminders" />
+    </group>
+
+</menu>

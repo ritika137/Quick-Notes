@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="com.example.ritika.quicknotes.createNewNote">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:hint="Title"
+            android:textCursorDrawable="@null"
+            android:textColor="?attr/colorControlNormal"
+
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="bottom"/>
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="449dp"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="Note"
+            android:inputType="textMultiLine"
+
+            android:textColor="?attr/colorControlNormal"
+            />
+
+
+
+            <TextView
+                android:id="@+id/lastEdited"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:text="Last Edited" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
